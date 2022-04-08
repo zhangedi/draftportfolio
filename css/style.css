@@ -58,6 +58,9 @@ nav li{
   border-radius: 20px;
   height: 50px;
 }
+*:focus{
+  border: 5px solid orange;
+}
 
 a.skip{
   background: white;
@@ -68,6 +71,7 @@ a.skip{
   position: absolute;
   left: -500px;
 }
+
 
 body{
     font-family: 'Trebuchet MS', sans-serif;
@@ -82,6 +86,10 @@ p{
 
 .skip{
     padding:10px;
+}
+
+a:focus.skip{
+  left: 0px;
 }
 
 .intro{
@@ -216,9 +224,7 @@ body {
     font-weight: bold;
   }
 
-  *:focus{
-    border: 5px solid orange;
-  }
+
   textarea{
     width: 100%;
     height: 35vh;
@@ -441,13 +447,13 @@ nav li:nth-of-type(3)::after{
     }
 /* TURN OFF PARALLAX IMAGE */
     .intro{
-      background-image: url(../images/background.png);
+      /* background-image: url(../images/background.png);
       background-color: orange;
-      min-height: 350px;
-      background-attachment: fixed;
-      background-position: fixed;
-      background-repeat: no-repeat;
-      background-size: cover;
+      min-height: 350px; */
+      background-attachment: local;
+      /* background-position: none; */
+      /* background-repeat: no-repeat;
+      background-size: cover; */
       }
     
 }
